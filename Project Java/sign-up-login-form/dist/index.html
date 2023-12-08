@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>	
+	<div class="main">  
+		<div class="yes" id="yes" ><i class="fa-solid fa-note-sticky"></i> </div>	
+		<div id="confirming"> Please Login After Signing up <span><i class="fa fa-arrow-down yes" aria-hidden="true"></i></span></div>	
+		<input type="checkbox" id="chk" aria-hidden="true">
+		
+		<div class="signup" id="signup">
+			<form >
+				<label for="chk" aria-hidden="true" id="chklabel">Sign up</label>
+				<input type="text" id="username" name="txt" placeholder="User name" required="">
+				<div class="error" id="error"></div> 
+				
+				<input type="email" id="email" name="email" placeholder="Email" required="">
+				<div class="error" id="erroremail"></div>
+				
+				<input type="password" name="pswd" id="password" placeholder="Password" required="">
+				<div id="errorPass" class="error"></div>
+				
+					<input type="password" name="re-pswd" id="Re-password"  placeholder="Re-Password" required="">
+					<div id="Re-errorPass" ></div>
+					<button onclick="sign()" id="stylesign">Sign up</button>
+				</form>
+				
+			</div>
+			<div class="login" id="login">
+				<form id="log">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" id="EMAIL" placeholder="Email" required>
+					<div class="error"></div>
+					<input type="password" name="pswd" id="PASS" placeholder="Password" required>
+					<div class="error" id="loginerror"></div>
+					<button onclick="login()">Login</button>
+				</form>
+			</div>
+		</div>
+</body>
+<script src="./script.js"></script>
+</html>
+	
